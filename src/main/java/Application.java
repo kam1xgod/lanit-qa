@@ -3,12 +3,12 @@ import animals.Kotik;
 public class Application {
   private static final int HOURS = 24;
   public static void main(String[] args) {
-    Kotik first = new Kotik("Jack", "Meow", 6.4, 2.5);
+    Kotik first = new Kotik("Jack", "Meow", 6, 2);
     Kotik second = new Kotik();
     second.setName("Lilly");
     second.setVoice("Meoow");
-    second.setSatiety(4.2);
-    second.setWeight(2.4);
+    second.setSatiety(4);
+    second.setWeight(2);
     String[] jacksActions = first.liveAnotherDay();
     for (int i = 0; i < HOURS; i++) {
       System.out.println(jacksActions[i] + "\n");

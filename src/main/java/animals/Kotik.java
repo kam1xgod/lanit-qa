@@ -6,8 +6,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Kotik {
   private String name;
   private String voice;
-  private double satiety;
-  private double weight;
+  private int satiety;
+  private int weight;
   
   private static AtomicInteger count = new AtomicInteger(0);
 
@@ -19,7 +19,7 @@ public class Kotik {
     count.incrementAndGet();
   }
 
-  public Kotik(String name, String voice, double satiety, double weight) {
+  public Kotik(String name, String voice, int satiety, int weight) {
     this.name = name;
     this.voice = voice;
     this.satiety = satiety;
@@ -42,7 +42,7 @@ public class Kotik {
   public boolean sleep() {
     if (satiety > 0) {
       printAction("slept");
-      satiety -= 0.5;
+      satiety -= 2;
       return true;
     }
     askForFood();
