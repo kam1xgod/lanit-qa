@@ -2,24 +2,17 @@ package com.kami.testcase.animals;
 
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
-import lombok.*;
 
 public class Kotik {
-  @Getter @Setter private String name;
-  @Getter @Setter private String voice;
-  @Getter @Setter private double satiety;
-  @Getter @Setter private double weight;
-
-  @Getter
-  @Setter(AccessLevel.NONE)
+  private String name;
+  private String voice;
+  private double satiety;
+  private double weight;
+  
   private static AtomicInteger count = new AtomicInteger(0);
 
-  @Getter(AccessLevel.NONE)
-  @Setter(AccessLevel.NONE)
   private final int METHODS = 5;
 
-  @Getter(AccessLevel.NONE)
-  @Setter(AccessLevel.NONE)
   private final int HOURS = 24;
 
   public Kotik() {
@@ -157,5 +150,41 @@ public class Kotik {
 
   private void askForFood() {
     System.out.println("How dare you! Your kitty is starving. Hurry, feed him!!");
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getVoice() {
+    return voice;
+  }
+
+  public void setVoice(String voice) {
+    this.voice = voice;
+  }
+
+  public double getSatiety() {
+    return satiety;
+  }
+
+  public void setSatiety(double satiety) {
+    this.satiety = satiety;
+  }
+
+  public double getWeight() {
+    return weight;
+  }
+
+  public void setWeight(double weight) {
+    this.weight = weight;
+  }
+
+  public static AtomicInteger getCount() {
+    return count;
   }
 }
