@@ -15,11 +15,11 @@ public class Application {
     }
 
     System.out.println("Here's one of your precious kitties: " + second.getName() + " weight: " + second.getWeight() + ". So cute!!");
-    System.out.println("Are my kittens talking the same way? " + compareVoice(first, second)); 
+    System.out.println("Are my kittens talking the same way? " + (compareVoice(first, second) ? "yes" : "no"));
     System.out.println("You have: " + Kotik.getCount() + " kittens.");
   }
 
-  private static String compareVoice(Kotik first, Kotik second) {
-    return first.getVoice().equals(second.getVoice()) ? "yes" : "no";
+  private static boolean compareVoice(Kotik first, Kotik second) {
+    return first.getVoice().equals(second.getVoice());
   }
 }
