@@ -1,6 +1,4 @@
-package com.kami.testcase;
-
-import com.kami.testcase.animals.Kotik;
+import animals.Kotik;
 
 public class Application {
   private static final int HOURS = 24;

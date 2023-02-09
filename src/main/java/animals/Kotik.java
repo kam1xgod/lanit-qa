@@ -1,4 +1,4 @@
-package com.kami.testcase.animals;
+package animals;
 
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
