@@ -9,14 +9,14 @@ public class Kotik {
   private int satiety;
   private int weight;
   
-  private static AtomicInteger count = new AtomicInteger(0);
+  private static Integer count = 0;
 
   private final int METHODS = 5;
 
   private final int HOURS = 24;
 
   public Kotik() {
-    count.incrementAndGet();
+    count++;
   }
 
   public Kotik(String name, String voice, int satiety, int weight) {
@@ -24,7 +24,7 @@ public class Kotik {
     this.voice = voice;
     this.satiety = satiety;
     this.weight = weight;
-    count.incrementAndGet();
+    count++;
   }
 
   // честно говоря, я бы все этим методы объединил в один, просто передавал бы енам того, чем занят
