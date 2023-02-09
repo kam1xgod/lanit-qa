@@ -11,7 +11,7 @@ public class Kotik {
   
   private static Integer count = 0;
 
-  private final int METHODS = 5;
+  private static final int METHODS = 5;
 
   private final int HOURS = 24;
 
