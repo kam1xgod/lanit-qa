@@ -79,19 +79,16 @@ public class Kotik {
     return false;
   }
 
-  public boolean eat() {
+  public void eat() {
     eat(5, "Extra super healthy food for your kitties.");
-    return true;
   }
 
-  public boolean eat(int amount) {
+  public void eat(int amount) {
     this.satiety += amount;
-    return true;
   }
 
-  public boolean eat(int amount, String foodName) {
+  public void eat(int amount, String foodName) {
     this.satiety += amount;
-    return true;
   }
 
   public String[] liveAnotherDay() {
@@ -184,7 +181,7 @@ public class Kotik {
     this.weight = weight;
   }
 
-  public static AtomicInteger getCount() {
+  public static Integer getCount() {
     return count;
   }
 }
