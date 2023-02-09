@@ -168,19 +168,19 @@ public class Kotik {
     this.voice = voice;
   }
 
-  public double getSatiety() {
+  public int getSatiety() {
     return satiety;
   }
 
-  public void setSatiety(double satiety) {
+  public void setSatiety(int satiety) {
     this.satiety = satiety;
   }
 
-  public double getWeight() {
+  public int getWeight() {
     return weight;
   }
 
-  public void setWeight(double weight) {
+  public void setWeight(int weight) {
     this.weight = weight;
   }
 

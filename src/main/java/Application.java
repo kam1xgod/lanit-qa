@@ -8,19 +8,18 @@ public class Application {
     second.setName("Lilly");
     second.setVoice("Meoow");
     second.setSatiety(4);
-    second.setWeight(2);
-    String[] jacksActions = first.liveAnotherDay();
+    second.setWeight(2); String[] jacksActions = first.liveAnotherDay();
     for (int i = 0; i < HOURS; i++) {
       System.out.println(jacksActions[i] + "\n");
 
     }
 
     System.out.println("Here's one of your precious kitties: " + second.getName() + " weight: " + second.getWeight() + ". So cute!!");
-    System.out.println("Are my kittens talking the same way? " + compareVoice(first.getVoice(), second.getVoice())); 
+    System.out.println("Are my kittens talking the same way? " + compareVoice(first, second)); 
     System.out.println("You have: " + Kotik.getCount() + " kittens.");
   }
 
-  private static String compareVoice(String voiceOne, String voiceTwo) {
-    return voiceOne.equals(voiceTwo) ? "yes" : "no";
+  private static String compareVoice(Kotik first, Kotik second) {
+    return first.getVoice().equals(second.getVoice()) ? "yes" : "no";
   }
 }
